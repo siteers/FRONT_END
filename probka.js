@@ -15,6 +15,10 @@ function sprawdz()
         {   
             var value = Number(input.value)
             answer.innerHTML = value + " to prawidlowa cyfra brawo! ";
+            answer.classList.add('new');
+            button.innerHTML = "odswiez";
+            button.removeEventListener("click", sprawdz);
+            button.addEventListener("click",odswiez);
         }
         else
         {   
@@ -36,5 +40,10 @@ function sprawdz()
     list.appendChild(li);
     list.lastChild.innerHTML = value;
     
+}
+
+function odswiez()
+{
+    location.reload();
 }
 

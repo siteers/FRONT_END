@@ -51,3 +51,7 @@ body {
     #button:focus {
     opacity: .75;
     }
+
+.new {
+    color:gold;
+}
